@@ -24,4 +24,4 @@ The absence of robust segmentation frameworks for noisy liquid phase transmissio
 
 -Finally, run sam2/sam-em/application/app.py
 
-using `python ./sam-em/application/app.py` assuming that you are in the sam2 root directory.
+using `python ./sam-em/application/app.py` assuming that you are in the sam-em root directory.
