@@ -10,14 +10,9 @@ The absence of robust segmentation frameworks for noisy liquid phase transmissio
 ## Installation
 -First create a conda enviornment for SAM-EM using `conda create -n SAM-EM python=3.10`
 
--Next install the Meta Segment Anything Model 2 (SAM 2) module inside this envirnment by activating your environment first `conda activate SAM-EM`. For installing SAM 2, follow the installations on the [SAM 2 github repository](https://github.com/facebookresearch/sam2). In short, first install `torch>=2.5.1`:
-### -For GPU with CUDA 11.7:
-`conda install pytorch==2.5.1 torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia`
-### -For CPU only:
-`conda install pytorch==2.5.1 torchvision torchaudio cpuonly -c pytorch`
+-Next install the Meta Segment Anything Model 2 (SAM 2) module inside this envirnment by activating your environment first `conda activate SAM-EM`. For installing SAM 2, follow the installations on the [SAM 2 github repository](https://github.com/facebookresearch/sam2).
 
--To make movies of masklets in the notebook later:
-`conda install -c conda-forge ffmpeg` 
+-Then place the sam-em folder inside the sam2 root folder.
 
 -Next download our model checkpoint from the following HuggingFace link: https://huggingface.co/sam-em-paper/finetuned-checkpoint/tree/main
 
@@ -27,6 +22,11 @@ The absence of robust segmentation frameworks for noisy liquid phase transmissio
 
 `pip install -r requirements.txt`
 
+-Finally, run sam2/sam-em/application/app.py
+
+using `python ./sam-em/application/app.py` assuming that you are in the sam2 root directory.
+
+
 Here is an example of how the masklets of the tracked particles look like:
 ![output](exampleanimation.gif)
 
@@ -34,4 +34,3 @@ Here is an example of how the masklets of the tracked particles look like:
 ## Acknowledgements 
 
 Currently unavailable for paper submission
-```   
