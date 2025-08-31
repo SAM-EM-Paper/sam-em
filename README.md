@@ -12,7 +12,7 @@ The absence of robust segmentation frameworks for noisy liquid phase transmissio
 
 -Next install the Meta Segment Anything Model 2 (SAM 2) module inside this envirnment by activating your environment first `conda activate SAM-EM`. For installing SAM 2, follow the installations on the [SAM 2 github repository](https://github.com/facebookresearch/sam2).
 
--Then place the sam-em folder inside the sam2 root folder.
+-Then place the sam2 folder inside the sam-em root folder.
 
 -Next download our model checkpoint from the following HuggingFace link: https://huggingface.co/sam-em-paper/finetuned-checkpoint/tree/main
 
