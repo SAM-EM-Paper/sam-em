@@ -9,8 +9,6 @@ The absence of robust segmentation frameworks for noisy liquid phase transmissio
 
 ## Installation
 
-Note: This app works best on Windows.
-
 -First create a conda enviornment for SAM-EM using `conda create -n SAM-EM python=3.10`
 
 -Next install the Meta Segment Anything Model 2 (SAM 2) module inside this envirnment by activating your environment first `conda activate SAM-EM`. For installing SAM 2, follow the installations on the [SAM 2 github repository](https://github.com/facebookresearch/sam2).
