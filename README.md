@@ -26,3 +26,9 @@ The absence of robust segmentation frameworks for noisy liquid phase transmissio
 -Finally, run /application/app.py
 
 using `python ./application/app.py` assuming that you are in the sam-em root directory.
+
+This is the main screen.
+![Main Screen](./main.png)
+
+Click the gear icon in the top right to specify the location of the checkpoint and config file for the finetuned model.
+
