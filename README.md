@@ -28,7 +28,18 @@ The absence of robust segmentation frameworks for noisy liquid phase transmissio
 using `python ./application/app.py` assuming that you are in the sam-em root directory.
 
 This is the main screen.
+
 ![Main Screen](./main.png)
 
 Click the gear icon in the top right to specify the location of the checkpoint and config file for the finetuned model.
+
+![Config and Checkpoint Paths](./config_checkpoint.png)
+
+Then back in the main menu, specify the video directory which contains the video frames and the output directory. Press load video and intialize. Then select annotate frame 0, and press annotate frame.
+
+![Prompt](./prompt.png)
+
+For each particle prompt annotation, enter the particle ID starting from 0 then 1, etc. Then drag a box prompt around the particle. Press generate mask, then move on to select prompts for all other particles. When you are done, select close and save prompts. On the main screen, press propogate masks. Results are in your ouput folder.
+
+
 
