@@ -8,11 +8,12 @@ The absence of robust segmentation frameworks for noisy liquid phase transmissio
 * * * * * *
 
 ## Installation
+
 -First create a conda enviornment for SAM-EM using `conda create -n SAM-EM python=3.10`
 
 -Next install the Meta Segment Anything Model 2 (SAM 2) module inside this envirnment by activating your environment first `conda activate SAM-EM`. For installing SAM 2, follow the installations on the [SAM 2 github repository](https://github.com/facebookresearch/sam2).
 
--Then place the sam-em folder inside the sam2 root folder.
+-Then place the sam2 folder inside the sam-em root folder.
 
 -Next download our model checkpoint from the following HuggingFace link: https://huggingface.co/sam-em-paper/finetuned-checkpoint/tree/main
 
@@ -22,15 +23,23 @@ The absence of robust segmentation frameworks for noisy liquid phase transmissio
 
 `pip install -r requirements.txt`
 
--Finally, run sam2/sam-em/application/app.py
+-Finally, run /application/app.py
 
-using `python ./sam-em/application/app.py` assuming that you are in the sam2 root directory.
+using `python ./application/app.py` assuming that you are in the sam-em root directory.
+
+This is the main screen.
+
+![Main Screen](./main.png)
+
+Click the gear icon in the top right to specify the location of the checkpoint and config file for the finetuned model.
+
+![Config and Checkpoint Paths](./config_checkpoint.png)
+
+Then back in the main menu, specify the video directory which contains the video frames and the output directory. Press load video and intialize. Then select annotate frame 0, and press annotate frame.
+
+![Prompt](./prompt.png)
+
+For each particle prompt annotation, enter the particle ID starting from 0 then 1, etc. Then drag a box prompt around the particle. Press generate mask, then move on to select prompts for all other particles. When you are done, select close and save prompts. On the main screen, press propogate masks. Results are in your ouput folder.
 
 
-Here is an example of how the masklets of the tracked particles look like:
-![output](exampleanimation.gif)
 
-* * * * * *
-## Acknowledgements 
-
-Currently unavailable for paper submission
