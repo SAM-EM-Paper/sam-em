@@ -39,7 +39,20 @@ Then back in the main menu, specify the video directory which contains the video
 
 ![Prompt](./prompt.png)
 
+
 For each particle prompt annotation, enter the particle ID starting from 0 then 1, etc. Then drag a box prompt around the particle. Press generate mask, then move on to select prompts for all other particles. When you are done, select close and save prompts. On the main screen, press propogate masks. Results are in your ouput folder.
+
+For the particle tracking portion of the application, click on particle tracking on the top element to get to the main screen of particle tracking.
+
+![Particle Tracking Main Screen](./main_traj.png)
+
+Then browse the output folder for the output csv, and press run motion analysis.
+
+![Particle Tracking Main Screen](./main_traj_csv.png)
+
+Finally, press view graphs.
+
+![Particle Tracking Main Screen](./traj_dist.png)
 
 
 
