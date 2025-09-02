@@ -1,6 +1,6 @@
 # SAM-EM
 ## Comprehensive application and framework for multiple particle segmentation and tracking in liquid phase TEM
-![Banner](./banner.jpg)
+![Banner](./images/banner.jpg)
 * * * * * *
 ## Abstract
 
@@ -29,30 +29,30 @@ using `python ./application/app.py` assuming that you are in the sam-em root dir
 
 This is the main screen.
 
-![Main Screen](./main.png)
+![Main Screen](./images/main.png)
 
 Click the gear icon in the top right to specify the location of the checkpoint and config file for the finetuned model.
 
-![Config and Checkpoint Paths](./config_checkpoint.png)
+![Config and Checkpoint Paths](./images/config_checkpoint.png)
 
 Then back in the main menu, specify the video directory which contains the video frames and the output directory. Press load video and intialize. Then select annotate frame 0, and press annotate frame.
 
-![Prompt](./prompt.png)
+![Prompt](./images/prompt.png)
 
 
 For each particle prompt annotation, enter the particle ID starting from 0 then 1, etc. Then drag a box prompt around the particle. Press generate mask, then move on to select prompts for all other particles. When you are done, select close and save prompts. On the main screen, press propogate masks. Results are in your ouput folder.
 
 For the particle tracking portion of the application, click on particle tracking on the top element to get to the main screen of particle tracking.
 
-![Particle Tracking Main Screen](./main_traj.png)
+![Particle Tracking Main Screen](./images/main_traj.png)
 
 Then browse the output folder for the output csv, and press run motion analysis.
 
-![Particle Tracking Main Screen](./main_traj_csv.png)
+![Particle Tracking Main Screen](./images/main_traj_csv.png)
 
 Finally, press view graphs.
 
-![Particle Tracking Main Screen](./traj_dist.png)
+![Particle Tracking Main Screen](./images/traj_dist.png)
 
 
 
