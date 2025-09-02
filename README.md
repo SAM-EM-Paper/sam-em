@@ -40,7 +40,9 @@ Then back in the main menu, specify the video directory which contains the video
 ![Prompt](./images/prompt.png)
 
 
-For each particle prompt annotation, enter the particle ID starting from 0 then 1, etc. Then drag a box prompt around the particle. Press generate mask, then move on to select prompts for all other particles. When you are done, select close and save prompts. On the main screen, press propogate masks, with results being stored in the output folder. An example video of the drawn masklets can be seen as following:
+For each particle prompt annotation, enter the particle ID starting from 0 then 1, etc. Then drag a box prompt around the particle. Press generate mask, then move on to select prompts for all other particles. When you are done, select close and save prompts. On the main screen, press propogate masks, with results being stored in the output folder. 
+
+An example video of the drawn masklets can be seen as following:
 
 ![Example Video](./images/exampleanimation.gif)
 
